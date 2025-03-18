@@ -11,7 +11,7 @@ const Views = () => {
 
   // Fetch data from the backend
   const gettingdata = async () => {
-    await axios.get("https://prasanth0820.github.io/Mern_Project/get/data/").then((data) => setAlldata(data.data));
+    await axios.get("https://mern-project-ml86.onrender.com/get/data/").then((data) => setAlldata(data.data));
   };
 
   // Delete an element
@@ -19,7 +19,7 @@ const Views = () => {
   const deletingdata = 
   async (params) => {
     try {
-      await axios.delete(`https://prasanth0820.github.io/Mern_Project/get/data/${params}`);
+      await axios.delete(`https://mern-project-ml86.onrender.com/get/data/${params}`);
       gettingdata();
     } catch (error) {
       console.error(error);

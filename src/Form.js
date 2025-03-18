@@ -24,7 +24,7 @@ const Form = ({ update, onreload, setSearchQuery, searchQuery }) => {
   const postingdata = async (e) => {
     e.preventDefault();
     if (update) {
-      await axios.put(`https://prasanth0820.github.io/Mern_Project/put/data/${update._id}`, { UserName, Description, Duration });
+      await axios.put(`https://mern-project-ml86.onrender.com/put/data/${update._id}`, { UserName, Description, Duration });
       Swal.fire({
         icon: "success",
         text: "Data Updated Successfully",
@@ -33,7 +33,7 @@ const Form = ({ update, onreload, setSearchQuery, searchQuery }) => {
       setDescription('');
       setDuration('');
     } else {
-      await axios.post("https://prasanth0820.github.io/Mern_Project/post/data", { UserName, Description, Duration });
+      await axios.post("https://mern-project-ml86.onrender.com/post/data", { UserName, Description, Duration });
       setUserName('');
       setDescription('');
       setDuration('');

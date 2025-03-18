@@ -33,7 +33,7 @@ const Form = ({ update, onreload, setSearchQuery, searchQuery }) => {
       setDescription('');
       setDuration('');
     } else {
-      await axios.post("https://prasanth0820.github.io/Mern_Project//post/data", { UserName, Description, Duration });
+      await axios.post("https://prasanth0820.github.io/Mern_Project/post/data", { UserName, Description, Duration });
       setUserName('');
       setDescription('');
       setDuration('');
